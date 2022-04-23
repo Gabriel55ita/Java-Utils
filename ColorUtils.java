@@ -3,7 +3,7 @@ import java.awt.*;
 public class ColorUtils {
 
     /**
-     * Converts hex color value into RGB
+     * Converts hex color value to RGB
      * @param hex string (including the #)
      * @return RGB value from the hex
      */
@@ -16,11 +16,11 @@ public class ColorUtils {
     }
 
     /**
-     * Converts RGB color value into hex
+     * Converts RGB color value to hex
      * @param color
      * @return hex string
      *
-     * Found in Stackoverflow a while ago
+     * Found on Stackoverflow a while ago
      */
     public static String rgbToHex(Color color) {
         String hex = String.format("#%06x", Integer.valueOf(color.getRGB() & 0x00FFFFFF));
@@ -28,7 +28,7 @@ public class ColorUtils {
     }
 
     /**
-     * @return cool Rainbow animated color
+     * @return cool Rainbow animated color (i used this in mc)
      */
     public static int getRainbow() {
         final long time = System.currentTimeMillis();
